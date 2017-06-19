@@ -45,6 +45,7 @@ public class Main {
         if (userCase.equals(word)) return;
 
         for (int i = 0; i < masUsCase.length; i++) {
+            if (userCase.length() <= word.length())
             if (masUsCase[i] == masWord[i])
                 partOfWord += masWord[i];
         }
